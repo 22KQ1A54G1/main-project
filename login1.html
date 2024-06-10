@@ -1,0 +1,104 @@
+3o<html>
+    <head>
+        <title>ui pages </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script>
+            
+    function loginValidation() {
+                
+      var uname = document.myform.sname.value;
+                
+      var password = document.myform.pass.value;
+                if(uname==null || uname=="") {
+                  alert("please enter name")
+                  return false;  
+               } else if (password.length>6){
+                  alert("Password Must be 6 letters are above 6")
+                  return false;
+               }  
+               return true                 
+            }           
+         </script>
+   
+        <style>
+            
+                #bg-video{
+            width:100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .video-background{
+            position:fixed;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            z-index: -1;
+        }
+        #bg-video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        
+             }
+            
+
+            h3 { color: rgb(163, 137, 137);
+               }
+               input[type="text"]::placeholder
+               input[type="password"]::placeholder{
+                color: antiquewhite;
+               }
+        </style>
+        
+    </head>
+    <body>
+        <marquee behavior="scroll" direction ="left">SHOPPING IS ALWAYS A GOOD IDEA.....".YOU CAN ALWAYS FIND SOMETHING YOU WANT.!!! ...***LOGIN TO OUR STORE***... 
+         "login to our online store and start shopping
+                     your favourite products with huge collection"</marquee>
+
+        <div class="video-background">
+            <video autoplay muted loop id="bg-video">
+            <source src="loginvideo.mp4" type="video/mp4">
+            your browser does not support html5 video.
+            </video>
+            </div>
+        <nav style="background-color: rgb(193, 193, 213);color:rgb(215, 138, 138) ;">   
+            <h2><a href = "#"> home </a> || 
+            
+            <a href ="#"> About Us </a> ||
+            
+            <a href="#">Contact us</a> ||
+
+            <a href="file:///C:/Users/spoor/OneDrive/Desktop/project/login%20page.html">Login</a> ||
+
+            <a href="#">Signin</a> ||
+            <a href="https://chatgpt.com/">AI help??</a>
+             
+            
+        </nav>
+        
+        <form name="myform" action="welcome page.html" onsubmit="return loginValidati(this)">
+        <div class="container"><center ><div class="box"><h1 style="text-shadow: 5px 5px 10px rgb(150, 14, 14);">login form</h1><br></center>
+            </div>
+         <center style="color: black;">
+            user name :<br>
+            <input type="text" name="sname"><br>
+            <br>
+
+            passwor    :<br>
+
+            <input type="password" name ="pass"><br>
+            <br>
+            <button type="button" class="btn btn-info"><input type="submit" value="submit" ></button><br>
+            <br>
+               </center>
+               </form>
+           <center> <button type="button" class="btn-success" ><a href="#" >Forget password </a></button>
+             <button type="button" class="btn-success"><a href="file:///C:/Users/spoor/OneDrive/Desktop/project/sigin1.html">Signin</a></button></div></center></div>
+    </body>
+</html>
